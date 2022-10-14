@@ -1,0 +1,113 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+
+/* Slider Heading Camel Case All Caps */ 
+.bigLetter {
+    font-size: 90px; 
+}
+
+@media only screen and (max-width: 1024px) {
+    .bigLetter {
+        font-size: 60px; 
+    } 
+}
+
+@media only screen and (max-width: 767px) {
+    .bigLetter {
+        font-size: 40px; 
+    } 
+}
+
+
+/* Diamond Buttons Desktop */ 
+
+/* Button on Green Background */ 
+.greenDiamondButton .elementor-button-icon {
+    border: 1px solid #BA9662; 
+    padding-left: 18px; 
+    padding-right: 18px; 
+    padding-top: 11px; 
+    padding-bottom: 11px; 
+    transform: rotate(45deg); 
+}
+
+.greenDiamondButton:hover .elementor-button-icon {
+    border: 1px solid white;
+    transition: all .3s; 
+}
+
+.greenDiamondButton .fas {
+    transform: rotate(315deg);
+    color: white !important;  
+}
+
+.greenDiamondButton:hover .fas {
+    color: #BA9662 !important; 
+}
+
+.greenDiamondButton .elementor-button-content-wrapper {
+    align-items: baseline;
+}
+
+
+/*Button on White Background */ 
+.whiteDiamondButton .elementor-button-icon {
+    border: 1px solid #BA9662; 
+    padding-left: 18px; 
+    padding-right: 18px; 
+    padding-top: 11px; 
+    padding-bottom: 11px; 
+    transform: rotate(45deg); 
+}
+
+.whiteDiamondButton:hover .elementor-button-icon {
+    border: 1px solid #306245;
+    transition: all .3s; 
+}
+
+.whiteDiamondButton .fas {
+    transform: rotate(315deg);
+    color: black !important;  
+}
+
+.whiteDiamondButton:hover .fas {
+    color: #306245 !important; 
+}
+
+.whiteDiamondButton .elementor-button-content-wrapper {
+    align-items: baseline;
+}
+
+
+/* Diamond Buttons Laptop and Smaller */ 
+
+@media only screen and (max-width: 1366px) {
+    .greenDiamondButton .elementor-button-icon {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+
+    .whiteDiamondButton .elementor-button-icon {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+}
